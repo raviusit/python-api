@@ -19,6 +19,9 @@ log = logging.getLogger(__name__)
 
 # Global constants, methods
 def db_connect():
+    print("#######")
+    print(os.environ.get("PGUSER"))
+    print("#######")
     # for sqlite3 connection
     # con = sqlite3.connect('records.db')
 
