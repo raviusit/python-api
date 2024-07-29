@@ -24,7 +24,8 @@ def db_connect():
 
     # For Postgresql Connection
     #con = psycopg2.connect(host='localhost', dbname='records', port=5432)
-    con = psycopg2.connect(user=os.environ.get("DATABASE_USUERNAME"), password=os.environ.get("DATABASE_PASSWORDL"), host=os.environ.get("DATABASE_URL"), port=5432, database=os.environ.get("DATABASE_NAME"))
+
+    con = psycopg2.connect(user=os.environ.get("PGUSER"), password=os.environ.get("PGPASSWORD"), host=os.environ.get("PGHOST"), port=5432, database=os.environ.get("PGDATABASE"))
     return con
 
 
