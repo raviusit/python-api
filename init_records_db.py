@@ -1,12 +1,10 @@
 import os
 import psycopg2
 
-#conn = psycopg2.connect(host='localhost',dbname='records', port=5432)
-con = psycopg2.connect(user="yqercigvpu", password="0ANXei8$DZrty$j2", host="demoapi.postgres.database.azure.com", port=5432, database="postgres")
+con = psycopg2.connect(user=os.environ.get("PGUSER"), password=os.environ.get("PGPASSWORD"), host=os.environ.get("PGHOST"), port=5432, database=os.environ.get("PGDATABASE"))
+
 # Open a cursor to perform database operations
-cur = conn.cursor()
-
-
+cur = con.cursor()
 #Execute a command: this creates a new table
 cur.execute('DROP TABLE IF EXISTS records;')
 cur.execute('CREATE TABLE records (id serial PRIMARY KEY,'
@@ -18,8 +16,6 @@ cur.execute("INSERT INTO records (todo, description) VALUES (%s, %s);", ('Hire',
 cur.execute("INSERT INTO records (todo, description) VALUES (%s, %s);", ('Fire','Fire the Product Owner'))
 cur.execute("INSERT INTO records (todo, description) VALUES (%s, %s);", ('Holidays Next Week','Go to Berlin'))
 
-
-conn.commit()
-
+con.commit()
 cur.close()
-conn.close()
+con.close()
