@@ -106,6 +106,9 @@ resource "azurerm_linux_web_app" "default" {
   resource_group_name = azurerm_resource_group.default.name
   service_plan_id     = azurerm_service_plan.default.id
 
+  identity {
+    type = "SystemAssigned"
+  }
   site_config {
     always_on                            = false
     default_documents                    = ["Default.asp", "Default.htm", "Default.html", "default.aspx", "hostingstart.html", "iisstart.htm", "index.htm", "index.html", "index.php"]
@@ -117,6 +120,9 @@ resource "azurerm_linux_web_app" "default" {
     remote_debugging_version             = "VS2022"
     vnet_route_all_enabled               = true
     websockets_enabled                   = false
+    application_stack {
+      python_version = "3.9"
+    }
   }
 
   app_settings = {
