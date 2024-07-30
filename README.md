@@ -1,7 +1,7 @@
 # Overview
 This repo contains a data-driven Python web app (running in Flask) deployed as an Azure App Service with the Azure Database for PostgreSQL relational database service. Azure App Service supports Python in a Linux server environment.
 
-This is a basic Python service. Endpoints information for todos API:
+This is a basic Python service. Endpoints information for todos API:/n
 GET /todos → Returns all ToDo
 GET /todos/{id} → Returns a ToDo
 POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id
