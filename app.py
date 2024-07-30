@@ -57,7 +57,7 @@ def db_connect():
 
 
 @app.route('/toggle')
-async def toggle():
+def toggle():
     try:
         global health_status
         health_status = not health_status
@@ -67,7 +67,7 @@ async def toggle():
 
 
 @app.route('/health')
-async def health():
+def health():
     try:
         if health_status:
             resp = jsonify(health="healthy")
@@ -81,7 +81,7 @@ async def health():
 
 # Info Page - base URL
 @app.route('/')
-async def welcome():
+def welcome():
     """
     This method just responds to the browser URL
     :return:        the rendered message
@@ -112,7 +112,7 @@ async def welcome():
 
 # /todos - returns you all todos
 @app.route('/todos', methods=['GET'])
-async def get_todos():
+def get_todos():
     """
     This function responds to {Base_URL}/todos
     :return:        all todos with id, todo and description
@@ -131,7 +131,7 @@ async def get_todos():
 
 # GET /todos/{id} → Returns a ToDo
 @app.route('/todos/<id>', methods=['GET'])
-async def get_todo(id):
+def get_todo(id):
     """
     This function responds to {Base_URL}/todos/{id}
     :return:        a specific todo
@@ -149,7 +149,7 @@ async def get_todo(id):
 
 
 @app.route('/todos/', methods=['POST'])
-async def add_todo():
+def add_todo():
     """
     This function responds to {Base_URL}/todos/
     :return:       Expects a ToDo (description is optional) and returns a ToDo with an id
@@ -188,7 +188,7 @@ async def add_todo():
 
 
 @app.route('/todos/<id>', methods=['PUT', 'PATCH'])
-async def mod_record(id):
+def mod_record(id):
     """
     This function responds to {Base_URL}/todos/{id}
     :return:       Expects an id and returns a message that particular Todo/description is updated
