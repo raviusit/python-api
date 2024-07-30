@@ -8,3 +8,7 @@ python-dotenv==1.0.1
 requests==2.32.3
 SQLAlchemy==2.0.31
 SQLAlchemy-Utils==0.41.2
+Werkzeug==3.0.3
+flask-marshmallow==1.2.1
+marshmallow==3.21.3
+marshmallow-sqlalchemy==1.0.0
