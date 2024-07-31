@@ -1,7 +1,10 @@
 # Overview
 <br />
-<img width="287" alt="Screenshot 2024-07-31 at 2 06 56 AM" src="https://github.com/user-attachments/assets/d372e59f-c39c-483e-b7cb-126029a21cef">
-<br />
+<p align="center">
+  <img width="287" alt="Screenshot 2024-07-31 at 2 06 56 AM" src="https://github.com/user-attachments/assets/d372e59f-c39c-483e-b7cb-126029a21cef">
+</p>
+<br /><br /><br />
+
 
 This repo contains a data-driven Python web app (running in Flask) deployed as an Azure App Service with the Azure Database for PostgreSQL relational database service. Azure App Service supports Python in a Linux server environment.
 
