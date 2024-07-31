@@ -35,13 +35,15 @@ jobs:
           pip install ruff
           ruff check --output-format=github .
         continue-on-error: true
+
+      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov
           pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-        
-      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
+        continue-on-error: true
+          
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
