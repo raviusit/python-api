@@ -14,10 +14,12 @@ POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id<br 
 <p><b>Public URL <b /> : https://aa-demo-gufrt.azurewebsites.net/</p>
 
 # Pre-requisite
+<br>
 <p>
 * An Azure account with an active subscription. I am using a free trial subscription here.<br>  
 * Fundamental knowledge of Python with Flask development, any relational Database, and Terraform for cloud infrastructure resource provisioning.
-</p><br>   
+</p>
+<br>   
 
 # Architecture Diagram 
 <p align="center">
