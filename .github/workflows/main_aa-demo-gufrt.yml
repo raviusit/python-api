@@ -29,6 +29,17 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
+      
+      - name: Lint with Ruff
+        run: |
+          pip install ruff
+          ruff check --output-format=github .
+        continue-on-error: true
+      
+      - name: Test with pytest
+        run: |
+          pip install pytest pytest-cov
+          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
