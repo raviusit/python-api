@@ -1,8 +1,13 @@
 # Overview
+<br />
+<img width="287" alt="Screenshot 2024-07-31 at 2 06 56 AM" src="https://github.com/user-attachments/assets/d372e59f-c39c-483e-b7cb-126029a21cef">
+<br />
+
 This repo contains a data-driven Python web app (running in Flask) deployed as an Azure App Service with the Azure Database for PostgreSQL relational database service. Azure App Service supports Python in a Linux server environment.
 
 This is a basic Python service. Endpoints information for todos API:\
 GET /todos → Returns all ToDo\
+
 GET /todos/{id} → Returns a ToDo\
 POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id\
 
@@ -10,7 +15,7 @@ URL : https://aa-demo-gufrt.azurewebsites.net/
 
 # Pre-requisite
 
-An Azure account with an active subscription. I am using a free trial subscription here.\  
+An Azure account with an active subscription. I am using a free trial subscription here.  
 Fundamental knowledge of Python with Flask development, any relational Database, and Terraform for cloud infrastructure resource provisioning.   
 
 # Architecture Diagram 
