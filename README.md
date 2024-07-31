@@ -11,13 +11,15 @@ GET /todos/{id} → Returns a ToDo<br />
 POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id<br />
 </p>
 
-<b>Public URL <b /> : https://aa-demo-gufrt.azurewebsites.net/
+<p><b>Public URL <b /> : https://aa-demo-gufrt.azurewebsites.net/</p>
 
 # Pre-requisite
-An Azure account with an active subscription. I am using a free trial subscription here.<br>  
-Fundamental knowledge of Python with Flask development, any relational Database, and Terraform for cloud infrastructure resource provisioning.<br>   
+<p>
+* An Azure account with an active subscription. I am using a free trial subscription here.<br>  
+* Fundamental knowledge of Python with Flask development, any relational Database, and Terraform for cloud infrastructure resource provisioning.
+</p><br>   
+
 # Architecture Diagram 
-<br>
 <p align="center">
   <img width="60%" alt="Screenshot 2024-07-29 at 7 54 02 PM" src="https://github.com/user-attachments/assets/49c4c57c-e21d-4f4f-9be8-e4ee6fff820b">
 </p>
