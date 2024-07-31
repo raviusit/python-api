@@ -1,7 +1,7 @@
 # Overview
 <br />
 <p align="center">
-  <img width="287" alt="Screenshot 2024-07-31 at 2 06 56 AM" src="https://github.com/user-attachments/assets/d372e59f-c39c-483e-b7cb-126029a21cef">
+  <img width="50%" alt="Screenshot 2024-07-31 at 2 06 56 AM" src="https://github.com/user-attachments/assets/d372e59f-c39c-483e-b7cb-126029a21cef">
 </p>
 <br /><br /><br />
 
@@ -23,7 +23,7 @@ Fundamental knowledge of Python with Flask development, any relational Database,
 
 # Architecture Diagram 
 
-<img width="943" alt="Screenshot 2024-07-29 at 7 54 02 PM" src="https://github.com/user-attachments/assets/49c4c57c-e21d-4f4f-9be8-e4ee6fff820b">
+<img width="60%" alt="Screenshot 2024-07-29 at 7 54 02 PM" src="https://github.com/user-attachments/assets/49c4c57c-e21d-4f4f-9be8-e4ee6fff820b">
 
 
 
