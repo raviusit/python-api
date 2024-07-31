@@ -15,7 +15,7 @@ POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id<br 
 
 # Pre-requisite
 <br>
-<p>
+<p >
 * An Azure account with an active subscription. I am using a free trial subscription here.<br>  
 * Fundamental knowledge of Python with Flask development, any relational Database, and Terraform for cloud infrastructure resource provisioning.
 </p>
@@ -28,6 +28,8 @@ POST /todos → Expects a ToDo (without an id) and returns a ToDo with an id<br 
 
 # Resources Used
 <br>
-https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app?tabs=flask%2Cwindows&pivots=azure-portal\
-https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_web_app\
-https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server\
+<p >
+ - https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app?tabs=flask%2Cwindows&pivots=azure-portal\
+ - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_web_app\
+ - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/postgresql_flexible_server\
+</p >
